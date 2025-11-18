@@ -1,10 +1,15 @@
 import pandas as pd
 from sqlalchemy import create_engine
+import os
+from dotenv import load_dotenv  # Neu
+
+# Lädt das Passwort aus der .env Datei
+load_dotenv()
 
 # --- KONFIGURATION ---
-# TRAGE HIER DEIN ECHTES PASSWORT EIN!
 DB_USER = 'root'
-DB_PASS = '5250'  
+# Hier holen wir das Passwort sicher:
+DB_PASS = os.getenv('DB_PASS')  
 DB_HOST = 'localhost'
 DB_NAME = 'bike_db'
 

@@ -12,7 +12,7 @@ Das Projekt deckt den gesamten Daten-Lebenszyklus ab:
 1.  **Data Engineering:** ETL-Pipeline von CSV in eine normalisierte MySQL-Datenbank.
 2.  **Analysis:** Explorative Datenanalyse (EDA) zur Identifikation von Einflussfaktoren.
 3.  **Machine Learning:** Training eines Random Forest Regressors (R² = 0.85).
-4.  **Deployment:** CLI-Tool für Echtzeit-Vorhersagen.
+4.  **Deployment:** CLI-Tool und Web-Dashboard für Vorhersagen.
 
 ---
 
@@ -23,6 +23,7 @@ Das Projekt deckt den gesamten Daten-Lebenszyklus ab:
 * **Database:** MySQL, SQLAlchemy (Schema Design, Normalization)
 * **Visualization:** Seaborn, Matplotlib
 * **Machine Learning:** Scikit-Learn (Regression, Feature Importance)
+* **App Framework:** Streamlit
 
 ---
 
