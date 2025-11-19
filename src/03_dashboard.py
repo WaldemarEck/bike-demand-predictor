@@ -31,18 +31,16 @@ humidity = st.sidebar.slider("Luftfeuchtigkeit (%)", 0, 100, 50)
 wind = st.sidebar.slider("Windgeschwindigkeit (m/s)", 0.0, 10.0, 1.5)
 rain = st.sidebar.number_input("Regen (mm)", 0.0, 50.0, 0.0)
 
-# --- NEU: Interaktive Checkbox ---
-# Der Nutzer kann jetzt anklicken, ob Feiertag ist
-is_holiday = st.sidebar.checkbox("Ist heute Feiertag?") 
+# --- Interaktive Checkboxen ---
+is_holiday = st.sidebar.checkbox("Ist heute Feiertag?")
+
+# Der "Kill-Switch": Wenn der Verleih zu ist, muss die Zahl 0 sein
+is_open = st.sidebar.checkbox("Ist der Verleih geöffnet?", value=True)
+is_functioning = is_open  # True oder False
 
 # Statische Werte
 solar = 0.5
-is_functioning = True
 
-# Statische Werte (könnte man auch interaktiv machen)
-solar = 0.5
-is_holiday = False
-is_functioning = True
 
 # --- 4. Vorhersage ---
 # DataFrame bauen (Exakt wie beim Training!)
