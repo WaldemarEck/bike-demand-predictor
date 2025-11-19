@@ -31,6 +31,14 @@ humidity = st.sidebar.slider("Luftfeuchtigkeit (%)", 0, 100, 50)
 wind = st.sidebar.slider("Windgeschwindigkeit (m/s)", 0.0, 10.0, 1.5)
 rain = st.sidebar.number_input("Regen (mm)", 0.0, 50.0, 0.0)
 
+# --- NEU: Interaktive Checkbox ---
+# Der Nutzer kann jetzt anklicken, ob Feiertag ist
+is_holiday = st.sidebar.checkbox("Ist heute Feiertag?") 
+
+# Statische Werte
+solar = 0.5
+is_functioning = True
+
 # Statische Werte (könnte man auch interaktiv machen)
 solar = 0.5
 is_holiday = False
